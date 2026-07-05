@@ -3,3 +3,4 @@ class Student:
 
 c1 = Student ()
 print(c1.name)
+print(c2.name)
