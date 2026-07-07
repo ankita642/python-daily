@@ -1,8 +1,3 @@
-class Car:
-    color = "black" 
-    @staticmethod
-    def start():
-        print("car started...")
 
     @staticmethod
     def stop():
