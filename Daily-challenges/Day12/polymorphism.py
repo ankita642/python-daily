@@ -25,4 +25,8 @@ num2.showNumber()
 num3 = num1 - num2
 num3.showNumber()
 
+num3 = num1 + num2
+num3.showNumber()
+
+
 
