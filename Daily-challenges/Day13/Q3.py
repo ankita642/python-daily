@@ -14,7 +14,7 @@ class Order:
 ord1 = Order("chips", 20)
 ord2 = Order("milk", 15)
 
-print(ord1 > ord2)
+print(ord1 > ord2) 
 
 
 
