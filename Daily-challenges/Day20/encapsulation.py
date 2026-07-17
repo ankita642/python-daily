@@ -1,3 +1,9 @@
+'''Design a BankAccount class where the account holder's __balance
+is kept strictly private. Provide a public deposit(amount) method
+and a withdraw(amount) method (ensure withdrawal fails if funds 
+are insufficient).'''
+
+
 class BankAccount:
     def __init__(self, account_holder: str, initial_balance: float = 0.0):
         self.account_holder = account_holder
