@@ -26,3 +26,4 @@ class Bus(Vehicle):
 school_bus = Bus("Volvo", 100, 50)
 print(school_bus.display_info())
 # Output: Brand: Volvo, Max Speed: 100 km/h, Capacity: 50 seats
+    
