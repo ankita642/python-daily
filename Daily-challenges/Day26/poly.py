@@ -1,22 +1,12 @@
-class CoreRepository:
-    def save(self, data):
-        print(f"Saving data to DB: {data}")
+class Bird:
+    def fly(self):
+        return "Some birds fly"
 
-class LoggingMixin(CoreRepository):
-    def save(self, data):
-        print("[LOG] Audit trail updated")
-        super().save(data)
+class Penguin(Bird):
+    def fly(self):
+        return "Penguins cannot fly"
 
-class ValidationMixin(CoreRepository):
-    def save(self, data):
-        if not data:
-            raise ValueError("Data cannot be empty")
-        print("[VALIDATION] Data passed checks")
-        super().save(data)
+def make_it_fly(bird_obj):
+    print(bird_obj.fly())
 
-# The Architectural Problem: Ordering Matters
-class SecureRepository(ValidationMixin, LoggingMixin):
-    pass
-
-repo = SecureRepository()
-repo.save("User Record")
+make_it_fly(Penguin())
