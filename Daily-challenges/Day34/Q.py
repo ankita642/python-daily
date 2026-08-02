@@ -1,3 +1,6 @@
+'''write a program in python to check if a given string reads 
+the same forward and backward'''
+
 def is_palindrome(text):
     # Remove spaces and convert to lowercase for accurate checking
     cleaned_text = "".join(text.split()).lower()
